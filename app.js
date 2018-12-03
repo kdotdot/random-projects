@@ -9,6 +9,10 @@ app.set('view engine', 'ejs');
 //static files
 app.use(express.static('./public'));
 
+app.get('/', function(req, res) {
+  res.send("Hello")
+});
+
 //fire controllers
 todoController(app);
 
