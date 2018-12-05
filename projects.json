@@ -1,0 +1,11 @@
+[{
+    "title": "To-do app",
+    "viewDir": "/todo",
+    "img": "img/todo-prev.jpg"
+  },
+  {
+    "title": "Weather app",
+    "viewDir": "/weather",
+    "img": "img/weather-prev.jpg"
+  }
+]

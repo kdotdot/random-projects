@@ -1,0 +1,92 @@
+body {
+  background: #F5F5F5;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #040F0F;
+}
+
+.intro {
+  width: 100%;
+  max-width: 1200px;
+  margin: 40px auto;
+}
+
+.intro h1 {
+  text-align: center;
+  font-weight: 300;
+  margin-bottom: 50px;
+}
+
+.intro p {
+  text-align: center;
+}
+
+.todo-table h2 {
+  font-weight: 300;
+  font-size: 20px;
+  text-align: center;
+}
+
+.todo-table {
+  position: relative;
+  width: 95%;
+  max-width: 1200px;
+  background: #acbdd2;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-top: 50px;
+}
+
+.todo-table form:after {
+  margin: 0;
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.todo-table input[type="text"] {
+  width: 65%;
+  padding: 20px;
+  background: #dee5ed;
+  border: 0;
+  float: left;
+  font-size: 20px;
+  color: #040F0F;
+}
+
+.todo-table button {
+  padding: 20px;
+  width: 30%;
+  float: left;
+  background: #5BC0BE;
+  border: 0;
+  box-sizing: border-box;
+  color: #040F0F;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.todo-table button:hover {
+  color: #F5F5F5;
+}
+
+.todo-table ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.todo-table li {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  font-family: arial;
+  font-size: 20px;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+
+.todo-table li:hover {
+  text-decoration: line-through;
+  background: rgba(0, 0, 0, 0.2);
+}
