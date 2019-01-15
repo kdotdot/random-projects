@@ -1,0 +1,23 @@
+.main-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+}
+
+.chat_wrapper {
+    height: 100%;
+}
+
+.changeName-wrapper {
+    display: flex;
+}
+
+.changeName-wrapper .nameInput {
+    flex: 1;
+}
+
+.changeName-wrapper .currentUser-wrapper {
+    flex: 1;
+    margin: auto;
+    text-align: right;
+}
