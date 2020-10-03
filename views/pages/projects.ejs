@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>kdotdot</title>
+  <link rel="stylesheet" type="text/css" href="/css/styles.css">
+  <link rel="stylesheet" type="text/css" href="/css/projects.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <% include ../partials/nav.ejs %>
+  <div class="wrapper">
+    <ul class="projects">
+      <% for(let i=0;i<data.length;i++){%>
+      <li>
+        <h2>
+          <%=data[i].title %>
+        </h2>
+        <a href=<%=data[i].viewDir %>>
+          <img src=<%=data[i].img %> width="400" height="240">
+        </a>
+        <br>
+        <a href=<%=data[i].viewDir %>> View more </a>
+      </li>
+      <!-- <%=data[i].title %> -->
+      <% } %>
+    </ul>
+  </div>
+  <script>
+    $(document).ready(function() {
+      $(".header a").removeClass("active");
+      $('#projects').addClass('active');
+    });
+  </script>
+</body>
+
+</html>
